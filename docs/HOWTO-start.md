@@ -4,10 +4,10 @@ In this document are explained what is **Plaza project** and how you can develop
 
 ## Index
 
- - [Backend](#Backend)
- - [Bridges](#Bridges) 
- - [Frontend](#Frontend)
- - [Start to develop your first Plaza program](#Start to develop your first Plaza program)
+ - [Backend](#backend)
+ - [Bridges](#bridges) 
+ - [Frontend](#frontend)
+ - [Start to develop your first Plaza program](#start-to-develop-your-first-plaza-program)
 
 # Plaza project have 3 principal components:
 
@@ -26,7 +26,7 @@ Runs the programs you build, remembers the important stuff and interconnects the
 
 The backend consists in a something similar to a  virtual machine, runs "low level code" and relies on bridges to connect with external services,
 like Telegram©.
-
+[⬆️index](#index)
 ### Bridges
 
 **Bridges** are small programs that connect the Plaza backend to any service.
