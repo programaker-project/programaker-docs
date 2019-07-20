@@ -26,6 +26,7 @@ Runs the programs you build, remembers the important stuff and interconnects the
 
 The backend consists in a something similar to a  virtual machine, runs "low level code" and relies on bridges to connect with external services,
 like Telegram©.
+
 [⬆️index](#index)
 ### Bridges
 
@@ -36,6 +37,8 @@ This small programs can be built by anyone ( like a Firefox© addons ), they are
 This programs are basic and intermediaries between the external services API's ( Like Telegram©, your favorite forecast platform, another external product... ) and the **Backend** **Plaza core ⚙️**.
 
 Its principal function is to *"translate"* that *"📡 protocols"* to the internal **Plaza core ⚙️**. 
+
+[⬆️index](#index)
 
 ### Frontend
 
@@ -51,6 +54,8 @@ Then the user through the **frontend**, can create, modify or delete these progr
 
 This makes it possible for anyone to develop new applications.
 
+[⬆️index](#index)
+
 # Start to develop your first Plaza program.
 
 ## Access to Plaza Frontend.
@@ -62,11 +67,15 @@ When you are logged, you will see the dashboard section in the **Plaza Frontend*
 ## Access to programs edition secction.
 Now in the section **Programs** press the button *"add one!"*, you go to access to the program web editor.
 
+[⬆️index](#index)
+
 ## Rename the program.
 Click in *"Rename"* button, in the pop-up write the program name.
 E.g.: *"The hello world program"*
 
 Now you can build your program.
+
+[⬆️index](#index)
 ## Add the first code block.
 
 First you application goes to need a code block of type *"hat block"* (*scratch terminology*), this type of blocks are the beggining of the scratch programs.
@@ -79,16 +88,22 @@ Click in the [i] > *Rename variable* > write "start".
 
 **(With this block the program is ready to respond to the telegram "/start" command.)*
 
+[⬆️index](#index)
+
 ## Add the second and last code block.
 
 Add the second block *"Respond [hello]"*.
 
 Double click in the string [hello] > write "Hello world!"
 
+[⬆️index](#index)
+
 ## Run your new program.
 Now, press in the top menu the " **start** " button.
 
 And thats all, your program are now active.
+
+[⬆️index](#index)
 
 # Show the program execution.
 
@@ -98,6 +113,8 @@ Select the chat with "PlazaBot" and write "/start".
 
 The PlazaBot goes to respond you, with a "Hello world!".
 
+
+[⬆️index](#index)
 # Use this bot outside of its chat
 
 Add the bot to another gropus like you add another contact.
@@ -105,6 +122,8 @@ Add the bot to another gropus like you add another contact.
 This bot goes to respond all "/start" messages in every group when you add the bot.
 
 Now it's time to create you own Plaza program :) 
+
+[⬆️index](#index)
 
 # For more information
 
