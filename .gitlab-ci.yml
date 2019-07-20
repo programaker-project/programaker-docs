@@ -1,15 +1,15 @@
-image: node:9.11.1
+image: docker:stable
 
-pages:
-  cache:
-    paths:
-    - node_modules/
+services:
+  - docker:dind
 
+before_script:
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+
+build-docker:
   script:
-  - npm install -g vuepress
-  - vuepress build docs
-  artifacts:
-    paths:
-    - public
+  - docker build -t plaza-docs  .
+  - docker tag plaza-docs $CI_REGISTRY/plaza-project/plaza-docs:$CI_COMMIT_SHA
+  - docker push $CI_REGISTRY/plaza-project/plaza-docs:$CI_COMMIT_SHA
   only:
-  - master
+  - docker-based-deployment
