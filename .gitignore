@@ -28,6 +28,8 @@
 # misc
 npm-debug.log
 
-#System Files
+# System Files
 .DS_Store
 Thumbs.db
+# KDE Dolphin specific directory view configuration:
+.directory
