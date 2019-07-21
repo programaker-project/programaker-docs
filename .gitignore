@@ -17,7 +17,9 @@
 *.launch
 .settings/
 *.sublime-workspace
-.~lock.* # KDE Kate
+
+# Ignore tmp files:
+.*~*
 
 # IDE - VSCode
 .vscode/*
