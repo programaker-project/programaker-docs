@@ -20,7 +20,6 @@ build-docker:
   - docker push $CI_REGISTRY/plaza-project/plaza-docs:$CI_COMMIT_SHA
   only:
   - master
-  - autodeploy
 
 publish-docs:
   stage: run
@@ -33,4 +32,3 @@ publish-docs:
   - KUBECONFIG="$PLAZA_DOCS_CI_KUBECONFIG" ./kubectl -n plaza-production set image deployment/plaza-docs docs=$CI_REGISTRY/plaza-project/plaza-docs:$CI_COMMIT_SHA
   only:
   - master
-  - autodeploy
