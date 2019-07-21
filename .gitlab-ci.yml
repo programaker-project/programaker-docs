@@ -4,12 +4,31 @@ services:
   - docker:dind
 
 before_script:
+  - env
+  - echo "$PLAZA_DOCS_CI_KUBECONFIG"
   - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
 
+stages:
+ - build
+ - run
+
 build-docker:
+  stage: build
   script:
   - docker build -t plaza-docs  .
   - docker tag plaza-docs $CI_REGISTRY/plaza-project/plaza-docs:$CI_COMMIT_SHA
   - docker push $CI_REGISTRY/plaza-project/plaza-docs:$CI_COMMIT_SHA
+  only:
+  - master
+
+publish-docs:
+  stage: run
+  script:
+  # Install kubectl
+  - apk update  && apk add --no-cache curl
+  - curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+  - chmod +x kubectl
+  # Run kubeconfig
+  - KUBECONFIG="$PLAZA_DOCS_CI_KUBECONFIG" ./kubectl -n plaza-production set image deployment/plaza-docs docs=$CI_REGISTRY/plaza-project/plaza-docs:$CI_COMMIT_SHA
   only:
   - master
