@@ -17,6 +17,7 @@
 *.launch
 .settings/
 *.sublime-workspace
+.~lock.* # KDE Kate
 
 # IDE - VSCode
 .vscode/*
