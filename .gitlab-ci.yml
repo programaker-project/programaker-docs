@@ -12,4 +12,4 @@ build-docker:
   - docker tag plaza-docs $CI_REGISTRY/plaza-project/plaza-docs:$CI_COMMIT_SHA
   - docker push $CI_REGISTRY/plaza-project/plaza-docs:$CI_COMMIT_SHA
   only:
-  - docker-based-deployment
+  - master
