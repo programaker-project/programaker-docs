@@ -4,8 +4,6 @@ services:
   - docker:dind
 
 before_script:
-  - env
-  - echo "$PLAZA_DOCS_CI_KUBECONFIG"
   - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
 
 stages:
