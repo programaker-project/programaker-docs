@@ -2,14 +2,6 @@
 
 In this document we will explain what is **Plaza** and how can you use it to develop a basic Telegram bot.
 
-
-## Index
-
- - [Frontend](#frontend)
- - [Backend](#backend)
- - [Bridges](#bridges)
- - [Develop your first Plaza program](#develop-your-first-plaza-program)
-
 # Plaza's main components
 
 - **Backend**: The core of Plaza.
@@ -26,13 +18,11 @@ The Frontend (you can see it at [ProjectPlaza.space](https://projectplaza.space)
 
 The Frontend takes programs and other information from the Backend and shows it on a website. With this, the user can create, modify or delete these programs on the browser.
 
-[⬆️index](#index)
 
 ### Backend
 
 The Backend is the component that makes everything work, the core ⚙️. It runs the programs you build, remembers the important stuff and interconnects the bridges.
 
-[⬆️index](#index)
 
 ### Bridges
 
@@ -40,7 +30,6 @@ Bridges are small programs that connect the Backend to any service. These can be
 
 These programs are simple intermediaries between the external services APIs (like Telegram, your favorite forecast service...) and the Backend. Its principal function is to translate the external protocols to Plaza's one and report to the Backend.
 
-[⬆️index](#index)
 
 # Develop your first Plaza program
 
@@ -55,7 +44,6 @@ First, you need to create a account or login in
 
 Now, in the **Programs** section, press the `Add one!` button. This will create a new program and take you to the program's web editor.
 
-[⬆️index](#index)
 
 ## Rename the program.
 
@@ -64,7 +52,6 @@ Click the `Rename` button, in the pop-up write the program name
 
 Now, let's build your program.
 
-[⬆️index](#index)
 
 ## Add the first code block.
 
@@ -76,7 +63,6 @@ Click and drag the *hat block* with the text `When received [/start]` to the bla
 
 *With this block the program is ready to respond to the telegram `/start` command.*
 
-[⬆️index](#index)
 
 ## Add the second and last code block.
 
@@ -84,24 +70,19 @@ Add a second block, `Respond [Hello]`, like the one before.
 
 Click in the `Hello` text and write `Hello world!`.
 
-[⬆️index](#index)
 
 ## Run your new program.
 
 Now press in the top menu the `Start` button. And that's all! your program is now active.
 
-[⬆️index](#index)
 
 ## Test the program.
 
 In your Telegram client select the chat with [PlazaBot](https://t.me/PlazaProjectBot) and write `/start`. PlazaBot will answer you with a "Hello world!".
 
-[⬆️index](#index)
 
 ## Use the bot on groups
 
 You can add the bot to another groups like you add another contact, the bot will answer all **your** `/start` messages in every group (as long as its present).
 
 Now it's time for you to create your own Plaza program :)
-
-[⬆️index](#index)
