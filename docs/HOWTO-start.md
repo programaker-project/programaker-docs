@@ -124,11 +124,3 @@ This bot goes to respond all "/start" messages in every group when you add the b
 Now it's time to create you own Plaza program :) 
 
 [⬆️index](#index)
-
-# For more information
-
-**Plaza frontend** url: [https://projectplaza.space](https://projectplaza.space)
-
-**Original Plaza project** web: https://gitlab.com/plaza-project
-
-Project created by **[@kenkeiras](https://gitlab.com/kenkeiras)** and collaborators: **[Plaza project group members](https://gitlab.com/groups/plaza-project/-/group_members)**
