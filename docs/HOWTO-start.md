@@ -38,7 +38,7 @@ The Backend is the component that makes everything work, the core ⚙️. It run
 
 Bridges are small programs that connect the Backend to any service. These can be built by anyone (like a plugin) and are run from outside the Plaza servers.
 
-These programs are simple intermediaries between the external services API's (like Telegram, your favorite forecast service...) and the Backend. Its principal function is to translate the external protocols to Plaza's one and report to the Backend.
+These programs are simple intermediaries between the external services APIs (like Telegram, your favorite forecast service...) and the Backend. Its principal function is to translate the external protocols to Plaza's one and report to the Backend.
 
 [⬆️index](#index)
 
@@ -88,7 +88,7 @@ Click in the `Hello` text and write `Hello world!`.
 
 ## Run your new program.
 
-Now press in the top menu the `Start` button. And thats all! your program is now active.
+Now press in the top menu the `Start` button. And that's all! your program is now active.
 
 [⬆️index](#index)
 
