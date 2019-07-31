@@ -1,4 +1,4 @@
-# How to start with Plaza
+# Quickstart
 
 In this document we will explain what is **Plaza** and how can you use it to develop a basic Telegram bot.
 

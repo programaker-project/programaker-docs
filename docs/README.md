@@ -9,7 +9,7 @@ And yes, we use UTF-8 emojis in our documentation 😉.
 
 ## First steps
 
-**New in Plaza?** read the [Quickstart](./tutorials/quickstart.md) and make your first telegram bot to understand the Plaza project.
+**New at Plaza?** read the [Quickstart](./tutorials/quickstart.md) and make your first telegram bot to understand the Plaza project.
 
 ## For developers
 
