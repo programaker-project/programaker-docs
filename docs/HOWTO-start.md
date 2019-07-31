@@ -1,126 +1,107 @@
 # How to start with Plaza development
 
-In this document are explained what is **Plaza project** and how you can develop a basic application.
+In this document we will explain what is the **Plaza** project and how can you use it to develop a basic Telegram bot.
+
 
 ## Index
 
- - [Backend](#backend)
- - [Bridges](#bridges) 
  - [Frontend](#frontend)
- - [Start to develop your first Plaza program](#start-to-develop-your-first-plaza-program)
+ - [Backend](#backend)
+ - [Bridges](#bridges)
+ - [Develop your first Plaza program](#develop-your-first-plaza-program)
 
-# Plaza project have 3 principal components:
+# Plaza's main components
 
-- **Backend** : The internal Plaza core.
-- **Frontend** : The web user access to interact with Plaza core data.
-- **Bridges** : Something similar to "widgets" who can connect Plaza core with external internet resources.
+- **Backend**: The core of Plaza.
+- **Frontend**: The web interface to interact with Plaza.
+- **Bridges**: External adapters which can connect Plaza with internet resources.
 
-## The basic diagram is:
-👤 User ↔️ 💻 **Frontend** ↔️ ⚙️ **Backend** ↔️ 📡 **Bridges** ↔️ 📜 External services
-    
+In a simple diagram, they are connected like this:
+
+👤 User ↔️ 💻 Frontend ↔️ ⚙️ Backend ↔️ 📡 Bridges ↔️ 📜 External services
+
+### Frontend
+
+The Frontend (you can see it at [ProjectPlaza.space](https://projectplaza.space)) is the web you can see through the browser.
+
+The Frontend takes programs and other information from the Backend and shows it on a website. With this, the user can create, modify or delete these programs on the browser.
+
+[⬆️index](#index)
+
 ### Backend
 
-It's the piece that makes everything work (the core ⚙️).
-
-Runs the programs you build, remembers the important stuff and interconnects the bridges.
-
-The backend consists in a something similar to a virtual machine, runs "low level code" and relies on bridges to connect with external services, like Telegram.
+The Backend is the component that makes everything work, the core ⚙️. It runs the programs you build, remembers the important stuff and interconnects the bridges.
 
 [⬆️index](#index)
 
 ### Bridges
 
-**Bridges** are small programs that connect the Plaza backend to any service.
+Bridges are small programs that connect the Backend to any service. These can be built by anyone (like a plugin) and are run from outside the Plaza servers.
 
-This small programs can be built by anyone ( like a Firefox addons ), they are run from outside the Plaza platform.
-
-This programs are basic and intermediaries between the external services API's ( Like Telegram, your favorite forecast platform, another external product... ) and the **Backend** **Plaza core ⚙️**.
-
-Its principal function is to *"translate"* that *"📡 protocols"* to the internal **Plaza core ⚙️**. 
+These programs are simple intermediaries between the external services API's (like Telegram, your favorite forecast service...) and the Backend. Its principal function is to translate the external protocols to Plaza's one and report to the Backend.
 
 [⬆️index](#index)
 
-### Frontend
+# Develop your first Plaza program
 
-The **frontend** ([https://projectplaza.space](https://projectplaza.space) ) is the project interface you can see through the browser, this makes Plaza cross-platform by default.
+## Access Plaza
 
-It takes information from the Plaza **Backend** and shows it visually.
+First, you need to create a account or login in
+[https://projectplaza.space](https://projectplaza.space). This is the [Frontend](#frontend).
 
-Then the user can, through the **frontend**, send orders to the backend to modify this information.
+<!-- TODO: Add how to register telegram -->
 
-It takes programs from the **Plaza Backend** and shows them visually.
+## Access to programs edition section
 
-Then the user through the **frontend**, can create, modify or delete these programs in the fronted editor.
-
-This makes it possible for anyone to develop new applications.
-
-[⬆️index](#index)
-
-# Start to develop your first Plaza program.
-
-## Access to Plaza Frontend.
-First you need to create a account or login in:
-[https://projectplaza.space](https://projectplaza.space)
-
-When you are logged, you will see the dashboard section in the **Plaza Frontend**
-
-## Access to programs edition secction.
-Now in the section **Programs** press the button *"add one!"*, you go to access to the program web editor.
+Now, in the **Programs** section, press the `Add one!` button. This will create a new program and take you to the program's web editor.
 
 [⬆️index](#index)
 
 ## Rename the program.
-Click in *"Rename"* button, in the pop-up write the program name.
-E.g.: *"The hello world program"*
 
-Now you can build your program.
+Click the `Rename` button, in the pop-up write the program name
+(e.g., "The hello world program") and click `Submit`.
+
+Now, let's build your program.
 
 [⬆️index](#index)
+
 ## Add the first code block.
 
-First you application goes to need a code block of type *"hat block"* (*scratch terminology*), this type of blocks are the beggining of the scratch programs.
+The first thing your application will need is a *hat block* ([scratch terminology](https://en.scratch-wiki.info/wiki/Hat_Block)), this type of blocks start the scratch programs.
 
-Press in "Show/hide" section to see the blocks list.
+To add one press the `Show/Hide` button on the left side of the screen to see the block list.
 
-Click and drag the *"hat block"* with the text "When received any message. Set [i]" to the blank zone, it goes to be like your first code line.
+Click and drag the *hat block* with the text `When received [/start]` to the blank zone, it will be your first code block.
 
-Click in the [i] > *Rename variable* > write "start".
-
-**(With this block the program is ready to respond to the telegram "/start" command.)*
+*With this block the program is ready to respond to the telegram `/start` command.*
 
 [⬆️index](#index)
 
 ## Add the second and last code block.
 
-Add the second block *"Respond [hello]"*.
+Add a second block, `Respond [Hello]`, like the one before.
 
-Double click in the string [hello] > write "Hello world!"
+Click in the `Hello` text and write `Hello world!`.
 
 [⬆️index](#index)
 
 ## Run your new program.
-Now, press in the top menu the " **start** " button.
 
-And thats all, your program are now active.
+Now press in the top menu the `Start` button. And thats all! your program is now active.
+
+[⬆️index](#index)
+
+## Test the program.
+
+In your Telegram client select the chat with [PlazaBot](https://t.me/PlazaProjectBot) and write `/start`. PlazaBot will answer you with a "Hello world!".
 
 [⬆️index](#index)
 
-# Show the program execution.
+## Use the bot on groups
 
-In your Telegram client aplication.
+You can add the bot to another groups like you add another contact, the bot will answer all **your** `/start` messages in every group (as long as its present).
 
-Select the chat with "PlazaBot" and write "/start".
-
-The PlazaBot goes to respond you, with a "Hello world!".
-
-
-[⬆️index](#index)
-# Use this bot outside of its chat
-
-Add the bot to another gropus like you add another contact.
-
-This bot goes to respond all "/start" messages in every group when you add the bot.
-
-Now it's time to create you own Plaza program :) 
+Now it's time for you to create your own Plaza program :)
 
 [⬆️index](#index)
