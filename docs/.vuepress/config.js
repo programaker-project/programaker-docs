@@ -4,8 +4,8 @@ module.exports = {
   dest: 'public',  // Destination directory for the build step
   themeConfig: {
     sidebar: [
-      ['/quickstart.md', 'Quickstart'],
-      '/bridge-communication-protocol.md',
+      ['/tutorials/quickstart.md', 'Quickstart'],
+      '/developers/bridge-communication-protocol.md',
     ]
   }
 }
