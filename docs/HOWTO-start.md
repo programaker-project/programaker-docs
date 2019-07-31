@@ -24,17 +24,17 @@ It's the piece that makes everything work (the core ⚙️).
 
 Runs the programs you build, remembers the important stuff and interconnects the bridges.
 
-The backend consists in a something similar to a  virtual machine, runs "low level code" and relies on bridges to connect with external services,
-like Telegram©.
+The backend consists in a something similar to a virtual machine, runs "low level code" and relies on bridges to connect with external services, like Telegram.
 
 [⬆️index](#index)
+
 ### Bridges
 
 **Bridges** are small programs that connect the Plaza backend to any service.
 
-This small programs can be built by anyone ( like a Firefox© addons ), they are run from outside the Plaza platform.
+This small programs can be built by anyone ( like a Firefox addons ), they are run from outside the Plaza platform.
 
-This programs are basic and intermediaries between the external services API's ( Like Telegram©, your favorite forecast platform, another external product... ) and the **Backend** **Plaza core ⚙️**.
+This programs are basic and intermediaries between the external services API's ( Like Telegram, your favorite forecast platform, another external product... ) and the **Backend** **Plaza core ⚙️**.
 
 Its principal function is to *"translate"* that *"📡 protocols"* to the internal **Plaza core ⚙️**. 
 
