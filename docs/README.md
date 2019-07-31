@@ -9,9 +9,8 @@ And yes, we use UTF-8 emojis in our documentation 😉.
 
 ## First steps
 
-**New in Plaza?** read [this HOW-TO](HOWTO-start) and make your first telegram functional bot to understand the Plaza project.
-
+**New in Plaza?** read the [Quickstart](quickstart.md) and make your first telegram bot to understand the Plaza project.
 
 ## For developers
 
-* You want to write a bridge on a language not yet supported? Check the **[bridge communication protocol](./bridge-communication-protocol)**
+* Do you want to write a bridge on a language not yet supported? Check the [bridge communication protocol](./bridge-communication-protocol)

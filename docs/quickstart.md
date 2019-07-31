@@ -1,6 +1,6 @@
-# How to start with Plaza development
+# How to start with Plaza
 
-In this document we will explain what is the **Plaza** project and how can you use it to develop a basic Telegram bot.
+In this document we will explain what is **Plaza** and how can you use it to develop a basic Telegram bot.
 
 
 ## Index
