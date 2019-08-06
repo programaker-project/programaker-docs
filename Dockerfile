@@ -7,7 +7,7 @@ RUN npm install -g vuepress
 FROM base as builder
 ADD . /app
 WORKDIR /app
-RUN vuepress build docs
+RUN vuepress build docs && cp -Rv assets/  public/
 
 # Copy final app to runner
 FROM nginx:alpine as runner
