@@ -7,7 +7,7 @@ Keep in mind that the usage of this libraries will change in the future.
 
 This guide will show you how to [prepare the necessary elements](#preparations) to develop new Plaza briges, 
 and will show you some base examples on how to write bridges with [getter](#getter-operations), 
-[operation]() and [event]() blocks.
+[operation](#operation-blocks) and [event](#event-blocks) blocks.
 These blocks are shown in separate code samples for simplicity, but can be freely mixed.
 
 
@@ -63,3 +63,47 @@ bridge.run() # Launch the bridge
 If we run this, we'll find a new block that we can use in our programs.
 
 ![](./random-number-program.png)
+
+
+## Operation blocks
+
+**operation** blocks (or [stack blocks](https://en.scratch-wiki.info/wiki/Stack_Block) on Scratch) 
+are blocks that run an independent operation, and which can be concatenated.
+In our case we'll build a **operation** that prints something on the bridge console.
+
+![](./log-to-console-block.png)
+
+```python
+from plaza_bridge import (
+    PlazaBridge,  # Import bridge functionality
+    BlockArgument,  # Needed for argument definition
+)
+
+# Create the bridge object
+bridge = PlazaBridge(name="Console bridge")
+
+# Define the getter
+@bridge.operation(
+    id="print_on_console",  # Give it an ID
+    message="Show on console %1",  # Define the message on the block
+    arguments=[
+        BlockArgument(str, "Test"), # Define the parameter, a string
+    ]
+)
+def print_on_console(data, extra_data):
+    print(data)
+
+bridge.endpoint = "**insert here the bridge endpoint**" # Configure the bridge endpoint
+bridge.run() # Launch the bridge
+```
+
+If we run this, we'll find a new block that we can use in our programs.
+
+![](./log-to-console-program.png)
+
+
+## Event blocks
+
+::: warning
+[Write me!](https://gitlab.com/plaza-project/plaza-docs/blob/master/docs/developers/build-a-bridge/README.md)
+:::
