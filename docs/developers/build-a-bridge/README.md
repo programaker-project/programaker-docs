@@ -26,7 +26,7 @@ click on `Back` to return to the dashboard.
 
 ## Getter blocks
 
-**getter** blocks (or [reporter blocks](https://en.scratch-wiki.info/wiki/Reporter_Block) on Scratch) 
+**Getter** blocks (or [reporter blocks](https://en.scratch-wiki.info/wiki/Reporter_Block) on Scratch) 
 are blocks that cannot run independently, but allow to obtain a value that might be used on other operations.
 In our case we'll build a **getter** that returns a random number given a lower and an upper bound.
 
@@ -60,14 +60,14 @@ bridge.endpoint = "**insert here the bridge endpoint**" # Configure the bridge e
 bridge.run() # Launch the bridge
 ```
 
-If we run this, we'll find a new block that we can use in our programs.
+If we run this, we'll find a new block that we can use in our programs to retrieve values.
 
 ![](./random-number-program.png)
 
 
 ## Operation blocks
 
-**operation** blocks (or [stack blocks](https://en.scratch-wiki.info/wiki/Stack_Block) on Scratch) 
+**Operation** blocks (or [stack blocks](https://en.scratch-wiki.info/wiki/Stack_Block) on Scratch) 
 are blocks that run an independent operation, and which can be concatenated.
 In our case we'll build a **operation** that prints something on the bridge console.
 
@@ -97,13 +97,69 @@ bridge.endpoint = "**insert here the bridge endpoint**" # Configure the bridge e
 bridge.run() # Launch the bridge
 ```
 
-If we run this, we'll find a new block that we can use in our programs.
+If we run this, we'll find a new block that we can use in our programs to perform actions.
 
 ![](./log-to-console-program.png)
 
 
 ## Event blocks
 
-::: warning
-[Write me!](https://gitlab.com/plaza-project/plaza-docs/blob/master/docs/developers/build-a-bridge/README.md)
-:::
+**Event** blocks (or [hat blocks](https://en.scratch-wiki.info/wiki/Hat_Block) on Scratch) 
+are blocks that sit on top of **reporter** blocks and trigger them when an event happens.
+In our case we'll build a **event** that is triggered every minute.
+
+![](./send-uptime-event-block.png)
+
+```python
+
+from plaza_bridge import (
+    PlazaBridge,  # Import bridge functionality
+
+    # Advanced block creation
+    VariableBlockArgument,
+    BlockContext,
+)
+
+# Create the bridge object
+bridge = PlazaBridge(
+    name="Uptime bridge",  # Bridge name
+    events=["on_update"],  # Define available bridge events
+)
+
+# Extract event
+on_update = bridge.events.on_update
+# Define event blocks
+on_update.add_trigger_block(
+    id="on_update_set",
+    message="On uptime update. Save uptime to %1",  # Set the message
+    arguments=[VariableBlockArgument()],    # Add a slot to point to a variable
+    save_to=BlockContext.ARGUMENTS[0],      # Point to the variable where is saved
+)
+
+# Parallel logic
+import threading
+import time
+def uptime_counter():
+    uptime_minutes = 0
+    while True:
+        time.sleep(60)
+        uptime_minutes += 1
+
+        print("Sending uptime:", uptime_minutes)
+        # Send event
+        on_update.send(
+            to_user=None,  # Send to everyone
+            content=uptime_minutes,  # Content of the event
+        )
+
+threading.Thread(target=uptime_counter).start()
+
+# Launch bridge
+bridge.endpoint = "**insert here the bridge endpoint**" # Configure the bridge endpoint
+bridge.run() # Launch the bridge
+```
+
+If we run this, we'll find a new block that we can use to detect events and do something 
+based on what happened.
+
+![](./send-uptime-event-program.png)
