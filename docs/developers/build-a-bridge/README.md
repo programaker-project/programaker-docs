@@ -16,7 +16,7 @@ These blocks are shown in separate code samples for simplicity, but can be freel
 
 This tutorial assumes that you know how to program in Python, and already have a basic environment setup.
 
-First install the library to build bridges with `pip install -U plaza-bridge`
+First install the library to build bridges with `pip install --user -U plaza-bridge`
 
 After that, log into Plaza, go to the `Bridges` section and click on `Add One!`.
 Set the name of your bridge on the resulting menu (minimum of 4 characters) and click `Create`, this will
