@@ -1,6 +1,6 @@
 # Plaza project documentation
 
-Welcome to Plaza's project documentation.
+Welcome to Plaza's project documentation. Plaza is the project behind [PrograMaker](https://programaker.com) and has the goal of enabling anyone to build anything, without the need for code, servers or technical expertise.
 
 Our objective is to make easy to understand Plaza and help you start to develop fancy Plaza project software.
 
