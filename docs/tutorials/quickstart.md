@@ -14,7 +14,7 @@ In a simple diagram, they are connected like this:
 
 ### Frontend
 
-The Frontend (you can see it at [ProjectPlaza.space](https://projectplaza.space)) is the web you can see through the browser.
+The Frontend (you can see it at [PrograMaker.com](https://programaker.com)) is the web you can see through the browser.
 
 The Frontend takes programs and other information from the Backend and shows it on a website. With this, the user can create, modify or delete these programs on the browser.
 
@@ -26,17 +26,17 @@ The Backend is the component that makes everything work, the core ⚙️. It run
 
 ### Bridges
 
-Bridges are small programs that connect the Backend to any service. These can be built by anyone (like a plugin) and are run from outside the Plaza servers.
+Bridges are small programs that connect the Backend to any service. These can be built by anyone (like a plugin) and are run from outside the Programaker servers.
 
 These programs are simple intermediaries between the external services APIs (like Telegram, your favorite forecast service...) and the Backend. Its principal function is to translate the external protocols to Plaza's one and report to the Backend.
 
 
-# Develop your first Plaza program
+# Develop your first Programaker program
 
-## Access Plaza
+## Access Programaker
 
 First, you need to create a account or login in
-[https://projectplaza.space](https://projectplaza.space). This is the [Frontend](#frontend).
+[https://programaker.com](https://programaker.com). This is the [Frontend](#frontend).
 
 <!-- TODO: Add how to register telegram -->
 
@@ -85,4 +85,4 @@ In your Telegram client select the chat with [PlazaBot](https://t.me/PlazaProjec
 
 You can add the bot to another groups like you add another contact, the bot will answer all **your** `/start` messages in every group (as long as its present).
 
-Now it's time for you to create your own Plaza program :)
+Now it's time for you to create your own Programaker program :)
