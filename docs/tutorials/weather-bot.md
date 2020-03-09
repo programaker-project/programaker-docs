@@ -246,4 +246,4 @@ For the final touch, lets change the "When received (/start)" to "When received 
 
 <img src="./img/aemet-get-min-max-final.png" class="program" />
 
-![](./img/aemet-final-test.png)_
+![](./img/aemet-final-test.png)
