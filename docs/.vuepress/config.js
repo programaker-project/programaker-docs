@@ -7,6 +7,7 @@ module.exports = {
     themeConfig: {
         sidebar: [
             ['/tutorials/quickstart.md', 'Quickstart'],
+            '/tutorials/weather-bot.md',
             '/developers/build-a-bridge/',
             '/developers/bridge-communication-protocol.md',
         ],
