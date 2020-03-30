@@ -39,7 +39,7 @@ And Telegram, where the chatbot will be located.
 
 ### Connecting to AEMET
 
-There is no special requirement to connect to the AEMET service, so we can just go to [PrograMaker's main page](https://programaker.com/) and click on the `[+]` button below "My Bridges".
+There is no special requirement to connect to the AEMET service, so we can just go to [PrograMaker's main page](https://programaker.com/) and click on the `[+]` button below "My connections".
 
 ![](./img/weather-connect.png)
 
@@ -61,7 +61,7 @@ With this we are done with the AEMET bridge, now lets connect to telegram.
 
 The connection to the Telegram bridge is slightly more involved, as it requires linking with our Telegram user.
 
-We start the same as AEMET, going to [PrograMaker's main page](https://programaker.com/) and click on the `[+]` button below "My Bridges".
+We start the same as AEMET, going to [PrograMaker's main page](https://programaker.com/) and click on the `[+]` button below "My connections".
 
 ![](./img/aemet-connect-to-telegram.png)
 
@@ -108,7 +108,7 @@ Ok, so now we are ready to write the program! Note that there's three sections o
 
 From top to bottom:
  - The **action bar** contains the buttons to operate the program.
-   The most important is the **upload** button, which will upload the blocks to the platform and start or refresh the bot program.
+   The most important one is the **upload** button, which will upload the blocks to the platform and start or refresh the bot program.
 
  - The **workspace** is where we will place the blocks that control the program.
    It also contains buttons to modify the zoom level and a trashcan, where we can drop blocks to remove them.
@@ -122,10 +122,10 @@ From top to bottom:
 
 ### Build the base
 
-First, lets build a program that responds to the `/start` command, and responds with a simple text.
+First, lets build a program that responds to the `/start` command on a telegram bot, and responds with a simple text.
 This first program will follow this diagram: <img src="./img/weather-bot-start.png" class="inline diagram" />
 
-If you have already built some programs it might not much, but with this we will have the base for any program: receiving an event and responding to it :)
+If you have already built some programs it might not feel like much, but with this we will have the base for any program: receiving an event and responding to it :)
 
 <br/>
 
@@ -163,9 +163,9 @@ If we did this correctly, we can send `/start` to [PlazaProjectBot](https://tele
 
 ### Completing the program
 
-So, we have a program that answers to our command, now lets use the connection with AEMET to send some weather data. The AEMET bridge gives us the maximum and minumum temperatures for a place, so we will with that.
+So, we have a program that answers to our command, now lets use the connection with AEMET to send some weather data. The AEMET bridge gives us the maximum and minumum temperatures for a place, so we will with do that.
 
-In this case the program's diagram is a bit bigger:
+In this case the program's diagram is a bit more complex:
 
 <img src="./img/weather-bot-aemet.png" class="diagram" />
 
@@ -174,7 +174,7 @@ Here we see two new types of operations, "Concatenate the text ..." and "Save to
 - The block for "Concatenate the text ..." can be found on the Operators category <img src="./img/operators-category-circle.png" class="inline" /> as the "Join (hello) (world)" block: <img src="./img/operators-join-block.png" class="inline" alt="Join (hello) (world) block" />
 - The block for "Save to ... variable" can be found on the Variables category <img src="./img/variables-category-circle.png" class="inline" /> as the "Set (variable) to (0)" block: <img src="./img/set-variable-join-block.png" class="inline" alt="Set (variable) to (0) block" />
 
-If we put the diagram and the blocks side by side we can start to see the shape of the final program:
+If we put the diagram and the blocks side by side, we can start to see the shape of the final program:
 
 <img src="./img/weather-bot-aemet-mapping.png" class="diagram" />
 
