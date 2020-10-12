@@ -16,17 +16,34 @@ These blocks are shown in separate code samples for simplicity, but can be freel
 
 This tutorial assumes that you know how to program in Python, and already have a basic environment setup.
 
-First install the library to build bridges with `pip install --user -U plaza-bridge`
+First install the library to build bridges with `pip install --user -U programaker-bridge`
 
-After that, log into Plaza, go to the `Bridges` section and click on `Add One!`.
-Set the name of your bridge on the resulting menu (minimum of 4 characters) and click `Create`, this will
-generate a new URL that you will have to copy and keep safe, this is the **Bridge endpoint**. After this you can
-click on `Back` to return to the dashboard.
+After that, log into Plaza, click on the menu on the top-left corner, go to the `Bridges` section  and click on `Add One!`.
 
+Set the name of your bridge on the resulting menu (minimum of 4 characters) and
+click `Create`, this will create a new bridge and take you to it's management
+panel (you can go back there by clicking on the card with the bridge name or icon).
+
+From this panel, we will have to copy the URL just next to `Connection URL:`,
+this is the **Bridge endpoint**.
+
+The latest thing we have to do is to generete a secret token. To generate this
+*secret tokens* latest thing we have to do in this panel is to click on the `+`
+button next to `Connection tokens` to generate a new *token*. Give it a name and
+click `Save`. A new token will be added to the list with a `Token key` not being
+`********`. Copy that key and keep it safe.
+
+Tokens are the way to make sure that the program connecting to the bridge URL
+not an impostor, and so it is important to avoid sharing them. It is always
+possible to generate new ones or to remove existing ones (but not to check it's
+secret part), so it's in case one might have been lost, to remove that and
+generate a new one is always the safest path.
+
+After this you can click outside the bridge's dialog, and then on *Programaker's* logo on the top-left corner to return to the dashboard.
 
 ## Getter blocks
 
-**Getter** blocks (or [reporter blocks](https://en.scratch-wiki.info/wiki/Reporter_Block) on Scratch) 
+**Getter** blocks (or [reporter blocks](https://en.scratch-wiki.info/wiki/Reporter_Block) on Scratch)
 are blocks that cannot run independently, but allow to obtain a value that might be used on other operations.
 In our case we'll build a **getter** that returns a random number given a lower and an upper bound.
 
@@ -39,7 +56,12 @@ from plaza_bridge import (
 )
 
 # Create the bridge object
-bridge = PlazaBridge(name="Random number bridge")
+bridge = PlazaBridge(name="Random number bridge",
+                     # Configure the bridge endpoint
+                     endpoint="**insert here the bridge endpoint**",
+                     # Configure the bridge token
+                     token="**insert here the bridge authentication token**",
+)
 
 # Define the getter
 @bridge.getter(
@@ -56,7 +78,6 @@ def get_random_number(lower, upper, extra_data):
     import random
     return random.randint(int(lower), int(upper))
 
-bridge.endpoint = "**insert here the bridge endpoint**" # Configure the bridge endpoint
 bridge.run() # Launch the bridge
 ```
 
@@ -67,7 +88,7 @@ If we run this, we'll find a new block that we can use in our programs to retrie
 
 ## Operation blocks
 
-**Operation** blocks (or [stack blocks](https://en.scratch-wiki.info/wiki/Stack_Block) on Scratch) 
+**Operation** blocks (or [stack blocks](https://en.scratch-wiki.info/wiki/Stack_Block) on Scratch)
 are blocks that run an independent operation, and which can be concatenated.
 In our case we'll build a **operation** that prints something on the bridge console.
 
@@ -80,7 +101,12 @@ from plaza_bridge import (
 )
 
 # Create the bridge object
-bridge = PlazaBridge(name="Console bridge")
+bridge = PlazaBridge(name="Console bridge"
+                     # Configure the bridge endpoint
+                     endpoint="**insert here the bridge endpoint**",
+                     # Configure the bridge token
+                     token="**insert here the bridge authentication token**",
+)
 
 # Define the getter
 @bridge.operation(
@@ -93,7 +119,6 @@ bridge = PlazaBridge(name="Console bridge")
 def print_on_console(data, extra_data):
     print(data)
 
-bridge.endpoint = "**insert here the bridge endpoint**" # Configure the bridge endpoint
 bridge.run() # Launch the bridge
 ```
 
@@ -104,7 +129,7 @@ If we run this, we'll find a new block that we can use in our programs to perfor
 
 ## Event blocks
 
-**Event** blocks (or [hat blocks](https://en.scratch-wiki.info/wiki/Hat_Block) on Scratch) 
+**Event** blocks (or [hat blocks](https://en.scratch-wiki.info/wiki/Hat_Block) on Scratch)
 are blocks that sit on top of **reporter** blocks and trigger them when an event happens.
 In our case we'll build a **event** that is triggered every minute.
 
@@ -124,6 +149,10 @@ from plaza_bridge import (
 bridge = PlazaBridge(
     name="Uptime bridge",  # Bridge name
     events=["on_update"],  # Define available bridge events
+                     # Configure the bridge endpoint
+                     endpoint="**insert here the bridge endpoint**",
+                     # Configure the bridge token
+                     token="**insert here the bridge authentication token**",
 )
 
 # Extract event
@@ -155,11 +184,10 @@ def uptime_counter():
 threading.Thread(target=uptime_counter).start()
 
 # Launch bridge
-bridge.endpoint = "**insert here the bridge endpoint**" # Configure the bridge endpoint
 bridge.run() # Launch the bridge
 ```
 
-If we run this, we'll find a new block that we can use to detect events and do something 
+If we run this, we'll find a new block that we can use to detect events and do something
 based on what happened.
 
 ![](./send-uptime-event-program.png)
