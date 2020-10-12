@@ -14,7 +14,17 @@ All communication is performed through the bridge websocket connection to the br
 
 ## Bridge initialization
 
-As a bridge websocket connects to the platform it must send the following information (JSON encoded):
+As a bridge websocket connects to the platform through the URL shown on the bridge configuration dialog (click on the bridge card on the bridge list), it must authenticate itself with a message like the following (all messages are JSON encoded):
+
+```json
+{
+    "type": "AUTHENTICATION",
+    "value": { "token": "<AUTHENTICATION TOKEN>" }
+}
+```
+
+
+After that, the bridge must report it's configuration:
 
 ```json
 {
