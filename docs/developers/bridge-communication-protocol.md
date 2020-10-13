@@ -2,7 +2,7 @@
 
 **Warning**: This protocol is in development and most of it **will change** later!
 
-This document defines the protocol that a bridge has to implement to expose its functionalities on the Plaza platform. There's four main contexts for this protocol:
+This document defines the protocol that a bridge has to implement to expose its functionalities on the Programaker platform. There's four main contexts for this protocol:
 
 1. Bridge initialization
 2. Event notification
@@ -29,7 +29,7 @@ After that, the bridge must report it's configuration:
 ```json
 {
     "type": "CONFIGURATION",
-    "value": { 
+    "value": {
         "blocks": [ <block definition> ],
         "is_public": false,
         "service_name": "<name of the service>"
@@ -47,7 +47,7 @@ Expanded:
 ```json
 {
     "type": "CONFIGURATION",
-    "value": { 
+    "value": {
         "blocks": [],
         "is_public": false,
         "service_name": "comm-test"
@@ -71,7 +71,7 @@ Operation and getter blocks are defined through the following objects
     "function_name": "<internal id for the operation>",
     "block_type": "<operation | getter>",
     "block_result_type": null,
-    "message": "<block message>", 
+    "message": "<block message>",
     "arguments": [ <argument definition> ]
  }
 ```
@@ -82,7 +82,7 @@ Operation and getter blocks are defined through the following objects
    * `operation`, defined on Scratch as [Stack Block](https://en.scratch-wiki.info/wiki/Stack_Block), can be concatenated.
    * `getter`, defined on Scratch as [Reporter Block](https://en.scratch-wiki.info/wiki/Reporter_Block), can be used in place of a value.
 * `block_result_type` is reserved and not used yet, set it to `null`.
-* `message`: The message shown on the block. All block arguments **must** be present on the message represented as `%<index-of-argument>` (index starts on 0). 
+* `message`: The message shown on the block. All block arguments **must** be present on the message represented as `%<index-of-argument>` (index starts on 0).
 * `arguments`: the arguments that the operation considers to perform an operation.
 
 #### Arguments
@@ -94,7 +94,7 @@ A bridge might require knowing the values of the context to perform a certain op
 
 ##### Values
 
-Simple value arguments can be defined with the following JSON object 
+Simple value arguments can be defined with the following JSON object
 
 ```json
 {
@@ -117,7 +117,7 @@ Variable name arguments can be defined with the following JSON object
 ```
 
 The class of the argument defines which variables can the user choses among, normal variables or list variables.
-The main application of these variable names are **Trigger blocks**. 
+The main application of these variable names are **Trigger blocks**.
 
 ##### Selections
 
@@ -130,7 +130,7 @@ A bridge simple block operation can be configured using this JSON object:
 ```json
 {
     "type": "CONFIGURATION",
-    "value": { 
+    "value": {
         "blocks": [
             {
                 "id": "max-num",
@@ -174,7 +174,7 @@ Trigger blocks represent an operation that is started when a certain event happe
     "function_name": "<internal id for the operation>",
     "block_type": "trigger",
     "key": "<key>",
-    "message": "<block message>", 
+    "message": "<block message>",
     "arguments": [ <argument definition> ],
     "save_to": <null | argument reference definition>,
     "expected_value": <null | argument reference definition>
@@ -184,7 +184,7 @@ Trigger blocks represent an operation that is started when a certain event happe
 * `id` and `function_name`: Define the unique `id` given by the bridge to the operation. **Note** that the internal id operation is duplicated on the `id` and function name. This is a known problem and is something to be fixed. It's recommended to use the the same value on `id` and `function_name` for clarity.
 * `block_type`: Define the nature of the block. Trigger blocks must be defined as `trigger`.
 * `key`: The event channel (of the ones from the bridge) where the event will be expected.
-* `message`: The message shown on the block. All block arguments **must** be present on the message represented as `%<index-of-argument>` (index starts on 0). 
+* `message`: The message shown on the block. All block arguments **must** be present on the message represented as `%<index-of-argument>` (index starts on 0).
 * `arguments`: the arguments that the operation considers to perform an operation.
 * `save_to` references an argument, this argument (must be a variable name), will store the content of the event.
 * `expected_value` references an argument, the value of this argument will be checked against the event `content`.
@@ -194,7 +194,7 @@ Trigger blocks represent an operation that is started when a certain event happe
 Argument references are specified with the following schema:
 
 ```json
-{ 
+{
     "type": "argument",
     "index": <index of the referenced argument>
 }
@@ -205,7 +205,7 @@ For example, a trigger block might be defined with the following structure:
 ```json
 {
     "type": "CONFIGURATION",
-    "value": { 
+    "value": {
         "blocks": [
             {
                 "id": "temperature-reading",
@@ -232,7 +232,7 @@ For example, a trigger block might be defined with the following structure:
 }
 ```
 
-In a single line: 
+In a single line:
 ```json
 {"type": "CONFIGURATION", "value": {"blocks": [{"id": "temperature-reading", "function_name": "temperature-reading", "key": "temperature-reading", "block_type": "trigger", "message": "On temperature reading. Set %1", "arguments": [{"type": "variable", "class": "single"}], "save_to": {"type": "argument", "index": 0}, "expected_value": null}], "is_public": false, "service_name": "comm-test"}}
 ```
@@ -275,7 +275,7 @@ In a single line:
 
 ## Function calls
 
-On the **Operations and getters** section we defined a block, which can be run by plaza
+On the **Operations and getters** section we defined a block, which can be run by programaker
 ```json
 {
     "id": "max-num",
@@ -356,4 +356,4 @@ TODO
 
 ## Data callback execution
 
-**Note**: this section is yet to be written, as future development will probably include major changes on it's operation and it's not required for most usages. 
+**Note**: this section is yet to be written, as future development will probably include major changes on it's operation and it's not required for most usages.

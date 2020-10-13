@@ -5,8 +5,8 @@ The bridge libraries are under heavy development.
 Keep in mind that the usage of this libraries will change in the future.
 :::
 
-This guide will show you how to [prepare the necessary elements](#preparations) to develop new Plaza briges, 
-and will show you some base examples on how to write bridges with [getter](#getter-operations), 
+This guide will show you how to [prepare the necessary elements](#preparations) to develop new Programaker briges,
+and will show you some base examples on how to write bridges with [getter](#getter-operations),
 [operation](#operation-blocks) and [event](#event-blocks) blocks.
 These blocks are shown in separate code samples for simplicity, but can be freely mixed.
 
@@ -18,7 +18,7 @@ This tutorial assumes that you know how to program in Python, and already have a
 
 First install the library to build bridges with `pip install --user -U programaker-bridge`
 
-After that, log into Plaza, click on the menu on the top-left corner, go to the `Bridges` section  and click on `Add One!`.
+After that, log into Programaker, click on the menu on the top-left corner, go to the `Bridges` section  and click on `Add One!`.
 
 Set the name of your bridge on the resulting menu (minimum of 4 characters) and
 click `Create`, this will create a new bridge and take you to it's management
@@ -50,13 +50,13 @@ In our case we'll build a **getter** that returns a random number given a lower 
 ![](./random-number-block.png)
 
 ```python
-from plaza_bridge import (
-    PlazaBridge,  # Import bridge functionality
+from programaker_bridge import (
+    ProgramakerBridge,  # Import bridge functionality
     BlockArgument,  # Needed for argument definition
 )
 
 # Create the bridge object
-bridge = PlazaBridge(name="Random number bridge",
+bridge = ProgramakerBridge(name="Random number bridge",
                      # Configure the bridge endpoint
                      endpoint="**insert here the bridge endpoint**",
                      # Configure the bridge token
@@ -95,13 +95,13 @@ In our case we'll build a **operation** that prints something on the bridge cons
 ![](./log-to-console-block.png)
 
 ```python
-from plaza_bridge import (
-    PlazaBridge,  # Import bridge functionality
+from programaker_bridge import (
+    ProgramakerBridge,  # Import bridge functionality
     BlockArgument,  # Needed for argument definition
 )
 
 # Create the bridge object
-bridge = PlazaBridge(name="Console bridge"
+bridge = ProgramakerBridge(name="Console bridge"
                      # Configure the bridge endpoint
                      endpoint="**insert here the bridge endpoint**",
                      # Configure the bridge token
@@ -137,8 +137,8 @@ In our case we'll build a **event** that is triggered every minute.
 
 ```python
 
-from plaza_bridge import (
-    PlazaBridge,  # Import bridge functionality
+from programaker_bridge import (
+    ProgramakerBridge,  # Import bridge functionality
 
     # Advanced block creation
     VariableBlockArgument,
@@ -146,7 +146,7 @@ from plaza_bridge import (
 )
 
 # Create the bridge object
-bridge = PlazaBridge(
+bridge = ProgramakerBridge(
     name="Uptime bridge",  # Bridge name
     events=["on_update"],  # Define available bridge events
                      # Configure the bridge endpoint

@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Plaza documentation',
+    title: 'Programaker documentation',
     dest: 'public',  // Destination directory for the build step
     head: [  // Favicon
         ['link', { rel: 'icon', href: '/favicon.ico' }]

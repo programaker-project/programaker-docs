@@ -75,7 +75,7 @@ This will open a window with the instructions to connect to the Telegram bridge.
 
 ![](./img/connect-to-telegram-instructions.png)
 
-The command shown here `/register e18d2162...` (it is different each time) has to be sent to [PlazaProjectBot](https://telegram.me/PlazaProjectBot). If we have a Telegram application installed, we can click on the link to open a conversation with the Bot
+The command shown here `/register e18d2162...` (it is different each time) has to be sent to [PrograMaker's bot](https://telegram.me/PlazaProjectBot). If we have a Telegram application installed, we can click on the link to open a conversation with the Bot
 
 ![](./img/telegram-register-chat.png)
 
@@ -156,7 +156,7 @@ After that we click on the "Upload" button to send the program to the platform a
 
 ![](./img/when-received-respond-upload.png)
 
-If we did this correctly, we can send `/start` to [PlazaProjectBot](https://telegram.me/PlazaProjectBot), and it should respond with the text we just set.
+If we did this correctly, we can send `/start` to [PrograMaker's bot](https://telegram.me/PlazaProjectBot), and it should respond with the text we just set.
 
 ![](./img/when-received-respond-test.png)
 

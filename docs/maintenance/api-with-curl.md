@@ -1,4 +1,4 @@
-# How to operate Plaza's API with curl
+# How to operate Programaker's API with curl
 
 ## User creation
 
@@ -130,4 +130,4 @@ Example:
     * Connection #0 to host localhost left intact
     {"control_url":"/api/v0/users/id/19dc4c21-7513-4547-8501-7e445d49df12/bridges/id/f3b1ae7e-6dfc-4d61-9e61-0267a78a66ea/communication"}
 
-This `control_url` is the one used by the bridge when connecting to plaza.
+This `control_url` is the one used by the bridge when connecting to programaker.
