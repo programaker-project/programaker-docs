@@ -10,13 +10,13 @@ Information we collect includes both information you knowingly and actively prov
 
 ### Log Data
 
-When you visit our website, our servers may automatically log the standard data provided by your web browser. It may include your device’s Internet Protocol (IP) address, your browser type and version, the pages you visit, the time and date of your visit, the time spent on each page, other details about your visit, and technical details that occur in conjunction with any errors you may encounter.
+When you visit our website, our servers may automatically log the standard data provided by your web browser. It may include your device’s Internet Protocol (IP) address, your browser type and version, the pages you visit, the time and date of your visit, other details about your visit, and technical details that occur in conjunction with any errors you may encounter.
 
 Please be aware that while this information may not be personally identifying by itself, it may be possible to combine it with other data to personally identify individual persons.
 
 ### Personal Information
 
-We may ask for personal information which may include one or more of the following:
+We may ask for personal information which may include the following:
 
  - Email
 
@@ -30,14 +30,11 @@ We may collect personal information from you when you do any of the following on
 
    - Use a mobile device or web browser to access our content
    - Contact us via email, social media, or on any similar technologies
-   - When you mention us on social media
 
-We may collect, hold, use, and disclose information for the following purposes, and personal information will not be further processed in a manner that is incompatible with these purposes:
+We may collect, hold and use information for the following purposes, and personal information will not be further processed in a manner that is incompatible with these purposes:
 
-We may collect, hold, use, and disclose information for the following purposes, and personal information will not be further processed in a manner that is incompatible with these purposes:
-
-   - to contact and communicate with you
-   - to enable you to access and use our website, associated applications, and associated social media platforms
+   - To contact and communicate with you
+   - To enable you to access and use our website, associated applications, and associated social media platforms
 
 Please be aware that we may combine information we collect about you with general information or research data we receive from other trusted sources.
 
@@ -61,11 +58,11 @@ We do not aim any of our products or services directly at children under the age
 
 ## International Transfers of Personal Information
 
-The personal information we collect is stored and/or processed where we or our partners, affiliates, and third-party providers maintain facilities. Please be aware that the locations to which we store, process, or transfer your personal information may not have the same data protection laws as the country in which you initially provided the information. If we transfer your personal information to third parties in other countries: (i) we will perform those transfers in accordance with the requirements of applicable law; and (ii) we will protect the transferred personal information in accordance with this privacy policy.
+The personal information we collect is stored and/or processed where we maintain facilities. Please be aware that the locations to which we store, process, or transfer your personal information may not have the same data protection laws as the country in which you initially provided the information. If we transfer your personal information to third parties in other countries: (i) we will perform those transfers in accordance with the requirements of applicable law; and (ii) we will protect the transferred personal information in accordance with this privacy policy.
 
 ## Your Rights and Controlling Your Personal Information
 
-You always retain the right to withhold personal information from us, with the understanding that your experience of our website may be affected. We will not discriminate against you for exercising any of your rights over your personal information. If you do provide us with personal information you understand that we will collect, hold, use and disclose it in accordance with this privacy policy. You retain the right to request details of any personal information we hold about you.
+You always retain the right to withhold personal information from us, with the understanding that your experience of our website may be affected. We will not discriminate against you for exercising any of your rights over your personal information. If you do provide us with personal information you understand that we will collect, hold and use it in accordance with this privacy policy. You retain the right to request details of any personal information we hold about you.
 
 If we receive personal information about you from a third party, we will protect it as set out in this privacy policy. If you are a third party providing personal information about somebody else, you represent and warrant that you have such person’s consent to provide the personal information to us.
 
@@ -77,7 +74,7 @@ If you believe that we have breached a relevant data protection law and wish to 
 
 ## Use of Cookies
 
-We use “cookies” to collect information about you and your activity across our site. A cookie is a small piece of data that our website stores on your computer, and accesses each time you visit, so we can understand how you use our site. This helps us serve you content based on preferences you have specified.
+We use “cookies” to accelerate your navigation across our site. A cookie is a small piece of data that our website stores on your computer, and accesses each time you visit, so we can identify you as your navigate. This helps us serve you content based on preferences you have specified.
 
 ## Limits of Our Policy
 
@@ -85,7 +82,7 @@ Our website may link to external sites that are not operated by us. Please be aw
 
 ## Changes to This Policy
 
-At our discretion, we may change our privacy policy to reflect updates to our business processes, current acceptable practices, or legislative or regulatory changes. If we decide to change this privacy policy, we will post the changes here at the same link by which you are accessing this privacy policy.
+We may update this Privacy Policy as necessary to reflect changes we make and to satisfy legal requirements. We will provide provide you with an appropriate notice of important changes at least 15 days before the effective date.
 
 If required by law, we will get your permission or give you the opportunity to opt in to or opt out of, as applicable, any new uses of your personal information.
 
