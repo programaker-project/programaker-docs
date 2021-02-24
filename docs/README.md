@@ -1,6 +1,6 @@
 # Programaker project documentation
 
-Welcome to Programaker's project documentation. Programaker is the project behind [PrograMaker.com](https://programaker.com) and has the goal of enabling anyone to build anything, without the need for code, servers or technical expertise.
+Welcome to PrograMaker's project documentation. PrograMaker is the project behind [PrograMaker.com](https://programaker.com) and has the goal of enabling anyone to build anything, without the need for code, servers or technical expertise.
 
 Our objective is to make easy to understand Programaker and help you start to develop fancy Programaker project software.
 
