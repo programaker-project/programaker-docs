@@ -14,6 +14,14 @@ When you visit our website, our servers may automatically log the standard data 
 
 Please be aware that while this information may not be personally identifying by itself, it may be possible to combine it with other data to personally identify individual persons.
 
+### Third parties
+
+PrograMaker enables the user to establish connections to third parties, this might be done through bridges provided by PrograMaker or via bridges provided by other users.
+
+Please be aware that we have no control over bridges provided by other users of the PrograMaker platform, and while we take steps for the user account that connects to this bridge to remain anonymous, the information used and sent by the bridge may be processed by the user that provides it. For this reason we cannot accept responsibility or liability for the privacy practices of bridges to third parties provided by other users.
+
+Additionally, PrograMaker offers the opt-in option to log the information that passes through the user's connection to a third party. Please be aware that by enabling this option the information taken from the third party by the user might be stored on PrograMaker's servers for later usage by the user.
+
 ### Personal Information
 
 We may ask for personal information which may include the following:
@@ -38,6 +46,14 @@ We may collect, hold and use information for the following purposes, and persona
 
 Please be aware that we may combine information we collect about you with general information or research data we receive from other trusted sources.
 
+### Information not collected
+
+We do not intentionally collect “Sensitive Personal Information”, such as personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person’s sex life or sexual orientation. If you choose to store any Sensitive Personal Information on our servers, you are responsible for complying with any regulatory controls regarding that data.
+
+We do not intentionally collect User Personal Information that is stored in your programs or other free-form content inputs. Any personal information within a user's program is the responsibility of the programs's owner.
+
+If you are a child under the age of 13, you may not have an account. PrograMaker does not knowingly collect information from, or direct any of our Services to, children under 13. If we learn or have reason to suspect that a user is under the age of 13, we will close the child’s account.
+
 ### Security of Your Personal Information
 
 When we collect and process personal information, and while we retain this information, we will protect it within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use, or modification.
@@ -51,10 +67,6 @@ You are responsible for selecting any password and its overall security strength
 We keep your personal information only for as long as we need to. This time period may depend on what we are using your information for, in accordance with this privacy policy. If your personal information is no longer required, we will delete it or make it anonymous by removing all details that identify you.
 
 However, if necessary, we may retain your personal information for our compliance with a legal, accounting, or reporting obligation or for archiving purposes in the public interest, scientific, or historical research purposes or statistical purposes.
-
-## Children’s Privacy
-
-We do not aim any of our products or services directly at children under the age of 13, and we do not knowingly collect personal information about children under 13.
 
 ## International Transfers of Personal Information
 
@@ -82,7 +94,7 @@ Our website may link to external sites that are not operated by us. Please be aw
 
 ## Changes to This Policy
 
-We may update this Privacy Policy as necessary to reflect changes we make and to satisfy legal requirements. We will provide provide you with an appropriate notice of important changes at least 15 days before the effective date.
+We may update this Privacy Policy as necessary to reflect changes we make and to satisfy legal requirements. We will provide provide you with an appropriate notice of important changes at least 30 days before the effective date.
 
 If required by law, we will get your permission or give you the opportunity to opt in to or opt out of, as applicable, any new uses of your personal information.
 
