@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Your privacy is important to us. It is PrograMaker's policy to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you, including across our website, https://programaker.com, and other sites we own and operate.
+Your privacy is important to us. It is PrograMaker's policy to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you, including across our website, [programaker.com](https://programaker.com), and other sites we own and operate.
 
 This policy is effective as of 24 February 2021 and was last updated on 24 February 2021.
 
@@ -102,6 +102,5 @@ If required by law, we will get your permission or give you the opportunity to o
 
 For any questions or concerns regarding your privacy, you may contact us using the following details:
 
-Sergio Martínez Portela
-
-sergio@programaker.com
+Sergio Martínez Portela<br/>
+[privacy@programaker.com](mailto:privacy@programaker.com)
