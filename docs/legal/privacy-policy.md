@@ -2,7 +2,7 @@
 
 Your privacy is important to us. It is PrograMaker's policy to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you, including across our website, [programaker.com](https://programaker.com), and other sites we own and operate.
 
-This policy is effective as of 24 February 2021 and was last updated on 24 February 2021.
+This policy is effective as of 24 February 2021 and was last updated on 28 February 2021.
 
 ## Third-Party Service Integration
 
