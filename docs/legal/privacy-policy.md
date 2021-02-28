@@ -33,25 +33,13 @@ Please be aware that while this information may not be personally identifying by
 
 We may ask for personal information which may include the following:
 
- - Email
+ - Email address
 
-### Legitimate Reasons for Processing Your Personal Information
+#### Email address
 
-We only collect and use your personal information when we have a legitimate reason for doing so. In which instance, we only collect personal information that is reasonably necessary to provide our services to you.
+It is collected during your registration on the platform and is used as a means to identify you and help you reset your password, in case it is needed. 
 
-### Collection and Use of Information
-
-We may collect personal information from you when you do any of the following on our website:
-
-   - Use a mobile device or web browser to access our content
-   - Contact us via email, social media, or on any similar technologies
-
-We may collect, hold and use information for the following purposes, and personal information will not be further processed in a manner that is incompatible with these purposes:
-
-   - To contact and communicate with you
-   - To enable you to access and use our website, associated applications, and associated social media platforms
-
-Please be aware that we may combine information we collect about you with general information or research data we receive from other trusted sources.
+It can also be used as an alternative to the username to Sign-In to the platform.
 
 ### Information Not Collected
 
