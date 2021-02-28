@@ -4,23 +4,30 @@ Your privacy is important to us. It is PrograMaker's policy to respect your priv
 
 This policy is effective as of 24 February 2021 and was last updated on 24 February 2021.
 
+## Third-Party Service Integration
+
+PrograMaker allows you to integrate and issue commands for various online third-party services ("Third-Party Services"). In order to take advantage of this feature, you may need to authenticate, register for or log into Third-Party Services through the Service or on the websites of their respective providers. When you enable linking between or log in to Third-Party Services through PrograMaker, we will collect relevant information necessary to enable the Service to access that Third-Party Service and your data and content contained within that Third-Party Service ("Login Credentials"). We may store your Login Credentials long enough to enable linking to the Third-Party Service.
+
+When you enable PrograMaker to link content and data between Third-Party Services, the Third-Party Services will provide us with access to certain information that you may have provided to the Third-Party Services. We will use and store such information in the way you explicitly enable, in the programs you build, and by the rules you set to govern the linking. In addition, you can use the PrograMaker to share content and Personal Data amongst the Third-Party Services you integrate. Please remember that the manner in which Third-Party Services use, store and disclose your information is governed by the policies of such Third-Party Services, and PrograMaker shall have no liability or responsibility for the privacy practices or other actions of any Third-Party Services that may be enabled.
+
+### Integrations built by other users
+
+PrograMaker also gives the options to the users to build their own links to Third-Party Services. Please be aware that we have no control over links provided by other users of the PrograMaker platform, and while we take steps for the user account that connects to this bridge to remain anonymous, the information used and sent by the bridge may be processed by the user that provides it. For this reason we cannot accept responsibility or liability for the privacy practices of bridges to third parties provided by other users.
+
+### Opt-in logging of link data
+
+PrograMaker offers the opt-in feature to log the information that passes through the user's connection to a Third-Party Service. By enabling this option the information taken that comes from the Third-Party Service by the user might be stored on PrograMaker's servers for later usage by the user. Only the user that opted-in for this will be able to use it. This information **will not** be used or disclosed by PrograMaker unless the law requires it. 
+
 ## Information We Collect
 
 Information we collect includes both information you knowingly and actively provide us when using or participating in any of our services and promotions, and any information automatically sent by your devices in the course of accessing our products and services.
+
 
 ### Log Data
 
 When you visit our website, our servers may automatically log the standard data provided by your web browser. It may include your device’s Internet Protocol (IP) address, your browser type and version, the pages you visit, the time and date of your visit, other details about your visit, and technical details that occur in conjunction with any errors you may encounter.
 
 Please be aware that while this information may not be personally identifying by itself, it may be possible to combine it with other data to personally identify individual persons.
-
-### Third parties
-
-PrograMaker enables the user to establish connections to third parties, this might be done through bridges provided by PrograMaker or via bridges provided by other users.
-
-Please be aware that we have no control over bridges provided by other users of the PrograMaker platform, and while we take steps for the user account that connects to this bridge to remain anonymous, the information used and sent by the bridge may be processed by the user that provides it. For this reason we cannot accept responsibility or liability for the privacy practices of bridges to third parties provided by other users.
-
-Additionally, PrograMaker offers the opt-in option to log the information that passes through the user's connection to a third party. Please be aware that by enabling this option the information taken from the third party by the user might be stored on PrograMaker's servers for later usage by the user.
 
 ### Personal Information
 
@@ -46,7 +53,7 @@ We may collect, hold and use information for the following purposes, and persona
 
 Please be aware that we may combine information we collect about you with general information or research data we receive from other trusted sources.
 
-### Information not collected
+### Information Not Collected
 
 We do not intentionally collect “Sensitive Personal Information”, such as personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person’s sex life or sexual orientation. If you choose to store any Sensitive Personal Information on our servers, you are responsible for complying with any regulatory controls regarding that data.
 
